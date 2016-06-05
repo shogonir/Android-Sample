@@ -5,4 +5,7 @@
 
     <!-- http connector -->
     <string name="http_connector_label">Http Connector</string>
+
+    <!-- image item view -->
+    <string name="image_item_view">Image Item View</string>
 </resources>

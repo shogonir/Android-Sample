@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/image_sake"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="カラオケ広場 渋谷店"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="大阪府東大阪市若江南町4-6-19"
+                android:textColor="#FFFFFFFF"
+                android:layout_gravity="end"
+                android:textAlignment="textEnd"
+                android:textSize="16sp" />
+
+            <!--<ImageButton
+                style="@style/ImageItemViewImageButton36dp"
+                android:src="@drawable/ic_map_white_36dp" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="遊び、カラオケ、渋谷"
+                android:textSize="14sp"
+                android:textColor="#FFFFFFFF"/>
+
+            <ImageButton
+                style="@style/ImageItemViewImageButton36dp"
+                android:src="@drawable/ic_call_white_36dp" />
+
+            <ImageButton
+                style="@style/ImageItemViewImageButton36dp"
+                android:src="@drawable/ic_open_in_browser_white_36dp" />
+
+            <ImageButton
+                style="@style/ImageItemViewImageButton36dp"
+                android:src="@drawable/ic_favorite_border_white_36dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

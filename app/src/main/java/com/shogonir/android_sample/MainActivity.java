@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.shogonir.android_sample.HttpConnector.HttpConnectorActivity;
+import com.shogonir.android_sample.ImageItemView.ImageItemViewActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void setOnClickListeners () {
         findViewById(R.id.http_connector).setOnClickListener(this);
+        findViewById(R.id.image_item_view).setOnClickListener(this);
     }
 
     @Override
@@ -27,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.http_connector :
                 startActivity(new Intent(this, HttpConnectorActivity.class));
                 break;
+            case R.id.image_item_view :
+                startActivity(new Intent(this, ImageItemViewActivity.class));
         }
     }
 }
