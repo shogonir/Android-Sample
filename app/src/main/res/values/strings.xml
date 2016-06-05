@@ -1,3 +1,8 @@
 <resources>
+
+    <!-- app -->
     <string name="app_name">Android-Sample</string>
+
+    <!-- http connector -->
+    <string name="http_connector_label">Http Connector</string>
 </resources>
