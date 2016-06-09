@@ -30,6 +30,12 @@
                 android:text="@string/image_item_view"
                 android:id="@+id/image_item_view"/>
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/drag_sort_list"
+                android:id="@+id/drag_sort_list"/>
+
         </LinearLayout>
 
     </ScrollView>

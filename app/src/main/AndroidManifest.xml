@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".HttpConnector.HttpConnectorActivity" />
-        <activity android:name=".ImageItemView.ImageItemViewActivity"></activity>
+        <activity android:name=".ImageItemView.ImageItemViewActivity" />
+        <activity android:name=".DragSortList.DragSortListActivity"></activity>
     </application>
 
 </manifest>

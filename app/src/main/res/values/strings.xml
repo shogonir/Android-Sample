@@ -8,4 +8,19 @@
 
     <!-- image item view -->
     <string name="image_item_view">Image Item View</string>
+
+    <!-- drag sort list activity -->
+    <string name="drag_sort_list">Drag Sort List View</string>
+    <string-array name="random_names">
+        <item>0</item>
+        <item>00</item>
+        <item>000</item>
+        <item>0000</item>
+        <item>00000</item>
+        <item>000000</item>
+        <item>0000000</item>
+        <item>00000000</item>
+        <item>000000000</item>
+        <item>0000000000</item>
+    </string-array>
 </resources>

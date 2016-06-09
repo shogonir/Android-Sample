@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.shogonir.android_sample.DragSortList.DragSortListActivity;
 import com.shogonir.android_sample.HttpConnector.HttpConnectorActivity;
 import com.shogonir.android_sample.ImageItemView.ImageItemViewActivity;
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void setOnClickListeners () {
         findViewById(R.id.http_connector).setOnClickListener(this);
         findViewById(R.id.image_item_view).setOnClickListener(this);
+        findViewById(R.id.drag_sort_list).setOnClickListener(this);
     }
 
     @Override
@@ -31,6 +33,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.image_item_view :
                 startActivity(new Intent(this, ImageItemViewActivity.class));
+                break;
+            case R.id.drag_sort_list :
+                startActivity(new Intent(this, DragSortListActivity.class));
+                break;
         }
     }
 }
