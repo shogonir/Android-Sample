@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:id="@+id/drag_list_item_text"
     android:textSize="@dimen/text_large"
-    android:padding="@dimen/padding_text_large">
+    android:padding="@dimen/padding_text_large"
+    android:background="@drawable/selector_drag_sort_list_item">
 
 </TextView>

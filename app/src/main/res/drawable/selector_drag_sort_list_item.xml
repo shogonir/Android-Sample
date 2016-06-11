@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_drag_hovered="true">
+        <color android:color="@color/colorBlue"/>
+    </item>
+
+    <item android:state_pressed="true">
+        <color android:color="@color/colorCyan"/>
+    </item>
+
+    <item android:state_selected="true">
+        <color android:color="@color/colorGreen"/>
+    </item>
+
+    <item android:state_drag_can_accept="true">
+        <color android:color="@color/colorYellow"/>
+    </item>
+
+    <item android:state_focused="true">
+        <color android:color="@color/colorRed"/>
+    </item>
+
+    <item android:state_hovered="true">
+        <color android:color="@color/colorMagenta"/>
+    </item>
+
+    <item android:state_active="true">
+        <color android:color="@color/colorPurple"/>
+    </item>
+
+    <item>
+        <color android:color="@color/colorWhite"/>
+    </item>
+</selector>

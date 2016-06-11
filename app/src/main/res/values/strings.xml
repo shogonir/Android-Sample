@@ -11,6 +11,8 @@
 
     <!-- drag sort list activity -->
     <string name="drag_sort_list">Drag Sort List View</string>
+    <string name="drag_sort_list_button_draggable">Draggable</string>
+    <string name="drag_sort_list_button_not_draggable">Not Draggable</string>
     <string-array name="random_names">
         <item>0</item>
         <item>00</item>
