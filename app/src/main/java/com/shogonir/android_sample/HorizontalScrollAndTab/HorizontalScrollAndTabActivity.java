@@ -1,9 +1,11 @@
 package com.shogonir.android_sample.HorizontalScrollAndTab;
 
 import android.graphics.Color;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutCompat;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -17,11 +19,22 @@ public class HorizontalScrollAndTabActivity extends AppCompatActivity {
         setContentView(R.layout.activity_horizontal_scroll_and_tab);
 
         insertViewsIntoHorizontalScrollView();
+
+        FragmentManager fm = getSupportFragmentManager();
+        HorizontalScrollAndTabPagerAdapter adapter = new HorizontalScrollAndTabPagerAdapter(fm);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.tab_view_pager);
+        viewPager.setAdapter(adapter);
+
+        TabLayout tabLayout = (TabLayout)findViewById(R.id.tab_tab);
+        tabLayout.setupWithViewPager(viewPager);
+        for (int i=0; i<3; i++) {
+            tabLayout.getTabAt(i).setText("Tab " + (i+1));
+        }
     }
 
-    public void insertViewsIntoHorizontalScrollView () {
-        LinearLayout layout = (LinearLayout)findViewById(R.id.horizontal_scroll_layout);
-        for (int i=0; i<10; i++) {
+    public void insertViewsIntoHorizontalScrollView() {
+        LinearLayout layout = (LinearLayout) findViewById(R.id.horizontal_scroll_layout);
+        for (int i = 0; i < 10; i++) {
             TextView textView = new TextView(this);
             textView.setText("Item " + i);
             int padding = 60;
