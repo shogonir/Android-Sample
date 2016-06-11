@@ -36,6 +36,12 @@
                 android:text="@string/drag_sort_list"
                 android:id="@+id/drag_sort_list"/>
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/horizontal_scroll_and_tab"
+                android:id="@+id/horizontal_scroll_and_tab"/>
+
         </LinearLayout>
 
     </ScrollView>

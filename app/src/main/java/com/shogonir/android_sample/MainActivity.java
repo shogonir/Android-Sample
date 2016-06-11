@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.shogonir.android_sample.DragSortList.DragSortListActivity;
+import com.shogonir.android_sample.HorizontalScrollAndTab.HorizontalScrollAndTabActivity;
 import com.shogonir.android_sample.HttpConnector.HttpConnectorActivity;
 import com.shogonir.android_sample.ImageItemView.ImageItemViewActivity;
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.http_connector).setOnClickListener(this);
         findViewById(R.id.image_item_view).setOnClickListener(this);
         findViewById(R.id.drag_sort_list).setOnClickListener(this);
+        findViewById(R.id.horizontal_scroll_and_tab).setOnClickListener(this);
     }
 
     @Override
@@ -36,6 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.drag_sort_list :
                 startActivity(new Intent(this, DragSortListActivity.class));
+                break;
+            case R.id.horizontal_scroll_and_tab :
+                startActivity(new Intent(this, HorizontalScrollAndTabActivity.class));
                 break;
         }
     }
