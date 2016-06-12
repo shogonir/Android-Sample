@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.shogonir.android_sample.Calendar.CalendarActivity;
 import com.shogonir.android_sample.DragSortList.DragSortListActivity;
 import com.shogonir.android_sample.HorizontalScrollAndTab.HorizontalScrollAndTabActivity;
 import com.shogonir.android_sample.HttpConnector.HttpConnectorActivity;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.image_item_view).setOnClickListener(this);
         findViewById(R.id.drag_sort_list).setOnClickListener(this);
         findViewById(R.id.horizontal_scroll_and_tab).setOnClickListener(this);
+        findViewById(R.id.calendar).setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.horizontal_scroll_and_tab :
                 startActivity(new Intent(this, HorizontalScrollAndTabActivity.class));
+                break;
+            case R.id.calendar :
+                startActivity(new Intent(this, CalendarActivity.class));
                 break;
         }
     }
