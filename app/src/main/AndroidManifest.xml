@@ -20,7 +20,8 @@
         <activity android:name=".HttpConnector.HttpConnectorActivity" />
         <activity android:name=".ImageItemView.ImageItemViewActivity" />
         <activity android:name=".DragSortList.DragSortListActivity" />
-        <activity android:name=".HorizontalScrollAndTab.HorizontalScrollAndTabActivity"></activity>
+        <activity android:name=".HorizontalScrollAndTab.HorizontalScrollAndTabActivity" />
+        <activity android:name=".Calendar.CalendarActivity"></activity>
     </application>
 
 </manifest>

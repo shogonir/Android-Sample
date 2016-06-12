@@ -28,4 +28,7 @@
 
     <!-- horizontal scroll and tab -->
     <string name="horizontal_scroll_and_tab">Horizontal Scroll And Tab</string>
+
+    <!-- calendar -->
+    <string name="calendar">Calendar</string>
 </resources>

@@ -19,4 +19,12 @@
         <item name="android:scaleType">centerCrop</item>
     </style>
 
+    <!-- calendar style -->
+    <style name="CalendarDate">
+        <item name="android:layout_gravity">top</item>
+        <item name="android:textColor">@color/colorPurple</item>
+        <item name="android:color">@color/colorOrange</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
 </resources>
