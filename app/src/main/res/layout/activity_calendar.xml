@@ -6,7 +6,14 @@
     tools:context="com.shogonir.android_sample.Calendar.CalendarActivity"
     android:id="@+id/calendar_layout">
 
-    <CalendarView
+    <!--<CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/calendar_view"
+        android:showWeekNumber="false"
+        android:dateTextAppearance="@style/CalendarDate"/>-->
+
+    <com.shogonir.android_sample.Calendar.TricolorCalendarView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/calendar_view"

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.shogonir.android_sample.Calendar.CalendarActivity;
+import com.shogonir.android_sample.CustomAdapter.CustomAdapterActivity;
 import com.shogonir.android_sample.DragSortList.DragSortListActivity;
 import com.shogonir.android_sample.HorizontalScrollAndTab.HorizontalScrollAndTabActivity;
 import com.shogonir.android_sample.HttpConnector.HttpConnectorActivity;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.drag_sort_list).setOnClickListener(this);
         findViewById(R.id.horizontal_scroll_and_tab).setOnClickListener(this);
         findViewById(R.id.calendar).setOnClickListener(this);
+        findViewById(R.id.custom_adapter).setOnClickListener(this);
     }
 
     @Override
@@ -46,6 +48,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.calendar :
                 startActivity(new Intent(this, CalendarActivity.class));
+                break;
+            case R.id.custom_adapter :
+                startActivity(new Intent(this, CustomAdapterActivity.class));
                 break;
         }
     }

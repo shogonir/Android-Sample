@@ -31,4 +31,7 @@
 
     <!-- calendar -->
     <string name="calendar">Calendar</string>
+
+    <!-- custom adapter -->
+    <string name="custom_adapter">Custom Adapter</string>
 </resources>

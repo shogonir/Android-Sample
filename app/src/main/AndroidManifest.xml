@@ -21,7 +21,8 @@
         <activity android:name=".ImageItemView.ImageItemViewActivity" />
         <activity android:name=".DragSortList.DragSortListActivity" />
         <activity android:name=".HorizontalScrollAndTab.HorizontalScrollAndTabActivity" />
-        <activity android:name=".Calendar.CalendarActivity"></activity>
+        <activity android:name=".Calendar.CalendarActivity" />
+        <activity android:name=".CustomAdapter.CustomAdapterActivity"></activity>
     </application>
 
 </manifest>
