@@ -1,18 +1,14 @@
-package com.shogonir.android_sample.Calendar;
+package com.shogonir.android_sample.calendar;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutCompat;
 import android.util.Log;
 import android.widget.CalendarView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.shogonir.android_sample.R;
-
-import org.w3c.dom.Text;
 
 public class CalendarActivity extends AppCompatActivity
         implements CalendarView.OnDateChangeListener {

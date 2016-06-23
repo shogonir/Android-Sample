@@ -34,4 +34,11 @@
 
     <!-- custom adapter -->
     <string name="custom_adapter">Custom Adapter</string>
+
+    <!-- realm -->
+    <string name="realm">Realm</string>
+    <string name="realm_insert">Insert</string>
+    <string name="realm_insert_name">Name</string>
+    <string name="realm_insert_code">Code</string>
+    <string name="realm_insert_toast_empty">Name or Code is empty</string>
 </resources>
