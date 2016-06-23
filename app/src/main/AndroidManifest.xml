@@ -17,12 +17,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HttpConnector.HttpConnectorActivity" />
-        <activity android:name=".ImageItemView.ImageItemViewActivity" />
-        <activity android:name=".DragSortList.DragSortListActivity" />
-        <activity android:name=".HorizontalScrollAndTab.HorizontalScrollAndTabActivity" />
-        <activity android:name=".Calendar.CalendarActivity" />
-        <activity android:name=".CustomAdapter.CustomAdapterActivity"></activity>
+        <activity android:name=".http_connector.HttpConnectorActivity" />
+        <activity android:name=".image_item_view.ImageItemViewActivity" />
+        <activity android:name=".drag_sort_list.DragSortListActivity" />
+        <activity android:name=".horizontal_scroll_and_tab.HorizontalScrollAndTabActivity" />
+        <activity android:name=".calendar.CalendarActivity" />
+        <activity android:name=".custom_adapter.CustomAdapterActivity" />
+        <activity android:name=".realm.RealmActivity" />
+        <activity android:name=".realm.RealmInsertActivity"></activity>
     </application>
 
 </manifest>

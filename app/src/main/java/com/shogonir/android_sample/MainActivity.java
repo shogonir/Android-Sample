@@ -5,12 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.shogonir.android_sample.Calendar.CalendarActivity;
-import com.shogonir.android_sample.CustomAdapter.CustomAdapterActivity;
-import com.shogonir.android_sample.DragSortList.DragSortListActivity;
-import com.shogonir.android_sample.HorizontalScrollAndTab.HorizontalScrollAndTabActivity;
-import com.shogonir.android_sample.HttpConnector.HttpConnectorActivity;
-import com.shogonir.android_sample.ImageItemView.ImageItemViewActivity;
+import com.shogonir.android_sample.calendar.CalendarActivity;
+import com.shogonir.android_sample.custom_adapter.CustomAdapterActivity;
+import com.shogonir.android_sample.drag_sort_list.DragSortListActivity;
+import com.shogonir.android_sample.horizontal_scroll_and_tab.HorizontalScrollAndTabActivity;
+import com.shogonir.android_sample.http_connector.HttpConnectorActivity;
+import com.shogonir.android_sample.image_item_view.ImageItemViewActivity;
+import com.shogonir.android_sample.realm.RealmActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.horizontal_scroll_and_tab).setOnClickListener(this);
         findViewById(R.id.calendar).setOnClickListener(this);
         findViewById(R.id.custom_adapter).setOnClickListener(this);
+        findViewById(R.id.realm).setOnClickListener(this);
     }
 
     @Override
@@ -51,6 +53,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.custom_adapter :
                 startActivity(new Intent(this, CustomAdapterActivity.class));
+                break;
+            case R.id.realm :
+                startActivity(new Intent(this, RealmActivity.class));
                 break;
         }
     }
