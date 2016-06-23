@@ -1,4 +1,4 @@
-package com.shogonir.android_sample.CustomAdapter;
+package com.shogonir.android_sample.custom_adapter;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

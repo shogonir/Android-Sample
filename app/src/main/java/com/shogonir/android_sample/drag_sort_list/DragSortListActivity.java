@@ -1,4 +1,4 @@
-package com.shogonir.android_sample.DragSortList;
+package com.shogonir.android_sample.drag_sort_list;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,7 +11,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mobeta.android.dslv.DragSortController;
-import com.mobeta.android.dslv.DragSortItemView;
 import com.mobeta.android.dslv.DragSortListView;
 import com.shogonir.android_sample.R;
 

@@ -1,4 +1,4 @@
-package com.shogonir.android_sample.HorizontalScrollAndTab;
+package com.shogonir.android_sample.horizontal_scroll_and_tab;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
