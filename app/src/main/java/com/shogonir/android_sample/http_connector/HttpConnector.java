@@ -16,9 +16,11 @@ import okhttp3.Response;
 public abstract class HttpConnector {
 
     private Handler mHandler = null;
+    private OnHttpConnectListener mListener;
 
-    public HttpConnector () {
+    public HttpConnector (OnHttpConnectListener listener) {
         mHandler = new Handler();
+        mListener = listener;
     }
 
     public void connectHttp (String url) {
@@ -27,7 +29,14 @@ public abstract class HttpConnector {
         Call call = client.newCall(request);
         call.enqueue(new Callback() {
             @Override
-            public void onFailure(Call call, IOException e) {}
+            public void onFailure(Call call, IOException e) {
+                mHandler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        mListener.onHttpConnectFailure();
+                    }
+                });
+            }
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
@@ -35,12 +44,10 @@ public abstract class HttpConnector {
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
-                        onResponseReceived(responseBody);
+                        mListener.onHttpConnectResponse(responseBody);
                     }
                 });
             }
         });
     }
-
-    public abstract void onResponseReceived (String responseBody);
 }

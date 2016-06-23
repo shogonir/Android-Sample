@@ -5,6 +5,7 @@
 
     <!-- http connector -->
     <string name="http_connector_label">Http Connector</string>
+    <string name="http_connector_connection_failed">Connection failed</string>
 
     <!-- image item view -->
     <string name="image_item_view">Image Item View</string>

@@ -7,18 +7,11 @@ import android.widget.TextView;
  */
 public class HatebuHttpConnector extends HttpConnector {
 
-    private TextView mTextView;
-
-    public HatebuHttpConnector (TextView textView) {
-        mTextView = textView;
+    HatebuHttpConnector (OnHttpConnectListener listener) {
+        super(listener);
     }
 
     public void fetchRecentBookmarks () {
         connectHttp("http://b.hatena.ne.jp/shogonir/rss?of=0");
-    }
-
-    @Override
-    public void onResponseReceived(String responseBody) {
-        mTextView.setText(responseBody);
     }
 }
