@@ -1,4 +1,4 @@
-package com.shogonir.android_sample.ImageItemView;
+package com.shogonir.android_sample.image_item_view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

@@ -1,12 +1,10 @@
-package com.shogonir.android_sample.HttpConnector;
+package com.shogonir.android_sample.http_connector;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import com.shogonir.android_sample.R;
-
-import org.w3c.dom.Text;
 
 public class HttpConnectorActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.shogonir.android_sample.HttpConnector;
+package com.shogonir.android_sample.http_connector;
 
 import android.os.Handler;
 

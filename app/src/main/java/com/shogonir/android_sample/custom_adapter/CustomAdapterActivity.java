@@ -1,4 +1,4 @@
-package com.shogonir.android_sample.CustomAdapter;
+package com.shogonir.android_sample.custom_adapter;
 
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
