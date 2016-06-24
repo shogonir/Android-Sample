@@ -45,6 +45,9 @@ public class RealmActivity extends AppCompatActivity  implements View.OnClickLis
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if (data == null) {
+            return;
+        }
         Bundle bundle = data.getExtras();
         switch (requestCode) {
             case CODE_INSERT :

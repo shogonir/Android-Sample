@@ -1,6 +1,7 @@
 package com.shogonir.android_sample.realm;
 
 import android.content.Context;
+import android.text.TextUtils;
 
 import com.shogonir.android_sample.data.NameCode;
 import com.shogonir.android_sample.data.NameCodeRealm;
@@ -42,6 +43,9 @@ public class NameCodeDao {
     }
 
     public void insertNameCode (String name, String code) {
+        if (TextUtils.isEmpty(name) || TextUtils.isEmpty(code)) {
+            return;
+        }
         RealmConfiguration realmConfig = new RealmConfiguration.Builder(mContext).build();
         Realm.setDefaultConfiguration(realmConfig);
         Realm realm = Realm.getDefaultInstance();
