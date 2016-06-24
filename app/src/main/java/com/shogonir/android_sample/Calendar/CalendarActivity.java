@@ -37,7 +37,6 @@ public class CalendarActivity extends AppCompatActivity
         Log.d(TAG, "onCreate: child 3 class " + layout.getChildAt(3).getClass().toString());
         ListView listView = (ListView)layout.getChildAt(3);
         Log.d(TAG, "onCreate: list item count " + listView.getAdapter().getCount());
-        Log.d(TAG, "onCreate: first visible " + listView.getSelectedItem().getClass().toString());
 
         //RelativeLayout layout = (RelativeLayout)findViewById(R.id.calendar_layout);
         //layout.addView(calendarView);
