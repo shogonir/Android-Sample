@@ -61,6 +61,12 @@
                 android:text="@string/realm"
                 android:id="@+id/realm"/>
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_listener"
+                android:id="@+id/sensor_listener"/>
+
         </LinearLayout>
 
     </ScrollView>

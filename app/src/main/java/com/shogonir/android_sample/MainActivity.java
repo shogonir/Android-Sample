@@ -12,6 +12,7 @@ import com.shogonir.android_sample.horizontal_scroll_and_tab.HorizontalScrollAnd
 import com.shogonir.android_sample.http_connector.HttpConnectorActivity;
 import com.shogonir.android_sample.image_item_view.ImageItemViewActivity;
 import com.shogonir.android_sample.realm.RealmActivity;
+import com.shogonir.android_sample.sensor.SensorListenerActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.calendar).setOnClickListener(this);
         findViewById(R.id.custom_adapter).setOnClickListener(this);
         findViewById(R.id.realm).setOnClickListener(this);
+        findViewById(R.id.sensor_listener).setOnClickListener(this);
     }
 
     @Override
@@ -56,6 +58,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.realm :
                 startActivity(new Intent(this, RealmActivity.class));
+                break;
+            case R.id.sensor_listener :
+                startActivity(new Intent(this, SensorListenerActivity.class));
                 break;
         }
     }

@@ -24,7 +24,8 @@
         <activity android:name=".calendar.CalendarActivity" />
         <activity android:name=".custom_adapter.CustomAdapterActivity" />
         <activity android:name=".realm.RealmActivity" />
-        <activity android:name=".realm.RealmInsertActivity"></activity>
+        <activity android:name=".realm.RealmInsertActivity" />
+        <activity android:name=".sensor.SensorListenerActivity"></activity>
     </application>
 
 </manifest>
