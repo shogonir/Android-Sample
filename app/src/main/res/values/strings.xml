@@ -42,4 +42,7 @@
     <string name="realm_insert_name">Name</string>
     <string name="realm_insert_code">Code</string>
     <string name="realm_insert_toast_empty">Name or Code is empty</string>
+
+    <!-- sensor listener -->
+    <string name="sensor_listener">Sensor Listener</string>
 </resources>
