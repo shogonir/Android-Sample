@@ -45,4 +45,7 @@
 
     <!-- sensor listener -->
     <string name="sensor_listener">Sensor Listener</string>
+
+    <!-- gl surface -->
+    <string name="gl_surface">GL Surface</string>
 </resources>

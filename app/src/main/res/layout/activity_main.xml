@@ -67,6 +67,12 @@
                 android:text="@string/sensor_listener"
                 android:id="@+id/sensor_listener"/>
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gl_surface"
+                android:id="@+id/gl_surface"/>
+
         </LinearLayout>
 
     </ScrollView>
