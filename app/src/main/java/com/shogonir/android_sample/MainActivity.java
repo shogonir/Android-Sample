@@ -8,6 +8,7 @@ import android.view.View;
 import com.shogonir.android_sample.calendar.CalendarActivity;
 import com.shogonir.android_sample.custom_adapter.CustomAdapterActivity;
 import com.shogonir.android_sample.drag_sort_list.DragSortListActivity;
+import com.shogonir.android_sample.gl_surface.GLSurfaceActivity;
 import com.shogonir.android_sample.horizontal_scroll_and_tab.HorizontalScrollAndTabActivity;
 import com.shogonir.android_sample.http_connector.HttpConnectorActivity;
 import com.shogonir.android_sample.image_item_view.ImageItemViewActivity;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.custom_adapter).setOnClickListener(this);
         findViewById(R.id.realm).setOnClickListener(this);
         findViewById(R.id.sensor_listener).setOnClickListener(this);
+        findViewById(R.id.gl_surface).setOnClickListener(this);
     }
 
     @Override
@@ -61,6 +63,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.sensor_listener :
                 startActivity(new Intent(this, SensorListenerActivity.class));
+                break;
+            case R.id.gl_surface :
+                startActivity(new Intent(this, GLSurfaceActivity.class));
                 break;
         }
     }
